@@ -1,0 +1,16 @@
+{
+  "wave": "2026-09-15",
+  "owner": "DubjamMusic",
+  "home": "ai-agent-taskforce",
+  "rule": "never-repeat-persona",
+  "excluded_existing": ["Chaos-Gremlin", "Cipher", "documentation-agent", "react-component-agent", "testing-agent", "Planner", "Executor", "Monitor", "Data Agent"],
+  "figures": [
+    {"id": "density-warden", "name": "Density Warden", "type": "prestige", "repos": ["hustlecodex-platform", "HustleCodex", "prestige_console"], "levers": ["decision", "nodes"], "pass_test": "density uses MAX(x,0.01) and live formulas only"},
+    {"id": "merge-surgeon", "name": "Merge Surgeon", "type": "shipping", "repos": ["ai-agent-taskforce"], "levers": ["velocity", "streak"], "pass_test": "branch + PR opened; main untouched"},
+    {"id": "drop-caller", "name": "Drop Caller", "type": "field-ops", "repos": ["fortnite-guide-builder"], "levers": ["velocity"], "pass_test": "calibration input yields drop + rotation card"},
+    {"id": "dubline-producer", "name": "Dubline Producer", "type": "signal", "repos": ["aura-music-interface"], "levers": ["nodes"], "pass_test": "one named music flow with a fail-able test title"},
+    {"id": "bounty-scout", "name": "Bounty Scout", "type": "hunt", "repos": ["hustlecodex-bounty-agents"], "levers": ["decision"], "pass_test": "scope packet with explicit stop condition; no payloads"},
+    {"id": "concordance-cartographer", "name": "Concordance Cartographer", "type": "quest-ui", "repos": ["chromatic-concordance-ui"], "levers": ["nodes"], "pass_test": "fixture JSON with empty and success states"},
+    {"id": "boardroom-chair", "name": "Boardroom Chair", "type": "coordination", "repos": ["boardroom-agent-orchestrator"], "levers": ["streak"], "pass_test": "four briefs + one pause gate; no cloned Planner text"}
+  ]
+}
