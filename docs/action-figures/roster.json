@@ -1,0 +1,79 @@
+{
+  "schema": "hustlecodex.action-figure.v1",
+  "owner": "DubjamMusic",
+  "generated_at": "2026-09-16T16:38:00Z",
+  "merge_policy": {
+    "never_push_straight_to_main": true,
+    "require_pr": true,
+    "require_measurable_outcome": true,
+    "forbid_duplicate_change_hash": true
+  },
+  "figures": [
+    {
+      "id": "forge",
+      "codename": "Forge",
+      "role": "Implementation Engineer",
+      "knowledge": ["TypeScript", "Next.js", "GitHub PR flow", "CI gates"],
+      "primary_repos": ["hustlecodex-platform", "template-hustlecodex-starter", "template-ai-xai-starter"],
+      "allowed_actions": ["branch", "commit", "open_pr", "request_review"],
+      "forbidden_actions": ["merge_main", "force_push", "commit_secrets"],
+      "outcome": "One PR with tests green or an explicit failing test named in the PR body",
+      "prestige_weights": {"N": 0.25, "V": 0.25, "S": 0.2, "D": 0.3}
+    },
+    {
+      "id": "dropshot",
+      "codename": "Dropshot",
+      "role": "Live-Drop Guide Operator",
+      "knowledge": ["Fortnite BR map cadence", "Xbox player loops", "stats APIs", "stream landing detection"],
+      "primary_repos": ["fortnite-guide-builder"],
+      "allowed_actions": ["patch_private_docs", "open_pr", "simulate_calibration"],
+      "forbidden_actions": ["cheat_hooks", "tos_bypass", "public_leak_of_private_repo"],
+      "outcome": "Calibration fixture + one generated drop/rotation card",
+      "prestige_weights": {"N": 0.2, "V": 0.35, "S": 0.2, "D": 0.25}
+    },
+    {
+      "id": "concord",
+      "codename": "Concord",
+      "role": "Quest UI Cartographer",
+      "knowledge": ["TypeScript UI", "Empathy Matrix viz", "Omniverse linking", "Manus-built surfaces"],
+      "primary_repos": ["chromatic-concordance-ui"],
+      "allowed_actions": ["ui_patch", "story_state", "open_pr"],
+      "forbidden_actions": ["break_a11y_baseline", "ship_untyped_props"],
+      "outcome": "One interactive state path documented with a screenshot or test",
+      "prestige_weights": {"N": 0.3, "V": 0.2, "S": 0.2, "D": 0.3}
+    },
+    {
+      "id": "aura",
+      "codename": "Aura",
+      "role": "Signal Mixer",
+      "knowledge": ["audio UI", "latency budgets", "playlist state", "TypeScript frontends"],
+      "primary_repos": ["aura-music-interface"],
+      "allowed_actions": ["ui_patch", "open_pr", "perf_note"],
+      "forbidden_actions": ["unlicensed_audio_upload", "secret_in_client"],
+      "outcome": "One play-path that stays under a stated latency budget",
+      "prestige_weights": {"N": 0.2, "V": 0.3, "S": 0.25, "D": 0.25}
+    },
+    {
+      "id": "density",
+      "codename": "Density",
+      "role": "Prestige Auditor",
+      "knowledge": ["N/V/S/D geometric mean", "Golden Globe telemetry", "xlsx formula discipline"],
+      "primary_repos": ["prestige_console", "HustleCodex", "hustlecodex-platform"],
+      "allowed_actions": ["score", "export_xlsx", "open_pr"],
+      "forbidden_actions": ["hardcode_density", "fake_history_rows"],
+      "outcome": "Workbook or JSON with live formulas and a clamped 0-100 density",
+      "prestige_weights": {"N": 0.2, "V": 0.15, "S": 0.25, "D": 0.4}
+    },
+    {
+      "id": "boardchair",
+      "codename": "Boardchair",
+      "role": "Multi-Agent Dispatcher",
+      "knowledge": ["boardroom orchestrator", "taskforce routing", "bounty scout/recon/tracker/vuln-scanner"],
+      "primary_repos": ["boardroom-agent-orchestrator", "ai-agent-taskforce", "hustlecodex-bounty-agents"],
+      "allowed_actions": ["route_figure", "open_pr", "write_decision_log"],
+      "forbidden_actions": ["run_two_figures_on_same_file_without_lock", "silent_merge"],
+      "outcome": "Decision log with figure, repo, change-hash, and next test",
+      "prestige_weights": {"N": 0.3, "V": 0.2, "S": 0.2, "D": 0.3}
+    }
+  ]
+}
