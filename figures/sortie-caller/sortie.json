@@ -1,0 +1,33 @@
+{
+  "figureId": "sortie-caller",
+  "codename": "SORTIE-CALLER-22",
+  "waveId": "2026-09-22-g-cipher",
+  "repo": "DubjamMusic/ai-agent-taskforce",
+  "role": "Dispatch three squads with a testable outcome each.",
+  "sorties": [
+    {
+      "id": "alpha-loom",
+      "assignee": "sigil-weaver",
+      "repo": "DubjamMusic/hustlecodex-platform",
+      "outcome": "cipher.json asserts density and frozen pair",
+      "test": "node figures/sigil-weaver/assert-cipher.mjs"
+    },
+    {
+      "id": "beta-dispatch",
+      "assignee": "sortie-caller",
+      "repo": "DubjamMusic/ai-agent-taskforce",
+      "outcome": "three sorties, no banned tokens, unique figure ids",
+      "test": "node figures/sortie-caller/assert-sortie.mjs"
+    },
+    {
+      "id": "gamma-orbit",
+      "assignee": "orrery-warden",
+      "repo": "DubjamMusic/prestige_console",
+      "outcome": "orrery.json geometric mean matches printed density",
+      "test": "node figures/orrery-warden/assert-orrery.mjs"
+    }
+  ],
+  "offRosterThisWave": ["brew-chronicler", "spark-wright", "drop-cartographer"],
+  "bannedTokens": ["planner", "executor", "monitor", "data_agent"],
+  "mergePolicy": "pr-only"
+}
